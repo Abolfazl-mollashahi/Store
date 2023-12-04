@@ -1,26 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="el" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="mb-[2rem]">
+      <div
+        class="container max-w-[97%] mr-auto ml-auto pt-[1rem] pr-[0.5rem] pl-[0.5rem]"
+      >
+        <!-- start header top -->
+        <section class="header__top mt-[1rem]">
+          <div class="flex justify-between items-center">
+            <!-- start header top left -->
+            <section class="header__top--left flex items-center">
+              <div
+                class="px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
+              >
+                <div class="mr-[1rem]">
+                  <a
+                    class="px-[0.6rem] py-[0.3rem] rounded-[50%] text-white bg-blue-700"
+                    >5</a
+                  >
+                </div>
+                <div>
+                  <a class="px-[0.6rem] py-[0.2rem] rounded-[50%] "
+                    ><i class="fa fa-bars">5</i></a
+                  >
+                </div>
+              </div>
+              <!-- icon save -->
+              <div
+                class="m-[0.3rem] px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
+              >
+                <div class="">
+                  <a
+                    class="px-[0.6rem] py-[0.2rem] rounded-[50%] text-white bg-blue-700"
+                    >5</a
+                  >
+                </div>
+              </div>
+              <!-- icon save -->
+              <!-- icon login__sing up -->
+              <div
+                class="mr-[0.3rem] px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
+              >
+                <div class="mr-[0.1rem]">
+                  <a class="px-[0.6rem] py-[0.3rem] rounded-[50%]">ورود</a>
+                </div>
+                <div>
+                  <a class="px-[0.6rem] py-[0.3rem] rounded-[50%]">ثبت نام</a>
+                </div>
+              </div>
+              <!-- icon login__sing up -->
+            </section>
+            <!-- start header top right -->
+            <section class="header__top--right flex items-center">
+              <!-- start search -->
+              <div
+                class="header__top--search w-[30rem] px-[0.4rem] py-[0.6rem] bg-slate-200 flex items-center justify-between rounded-[5rem]"
+              >
+                <div class="">
+                  <a
+                    class="px-[0.8rem] py-[0.4rem] rounded-[50%] text-white bg-blue-700"
+                    >5</a
+                  >
+                </div>
+                <div style="direction: rtl;" class="text-left mr-[0.5rem]">
+                  <input
+                    class="outline-none border-none bg-transparent text-zinc-600"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="جستجوی محصولات ..."
+                  />
+                </div>
+              </div>
+              <!-- start logo -->
+              <div class="w-[11rem] ml-[1rem]">
+                <img src="/assets/logo.png" alt="logo site">
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- end header top -->
 
-<head>
-  <meta charset="el">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-</head>
-<body>
+        <!-- start header bottom-->
+        <section class="header__bottom"></section>
+        <!-- end header bottom -->
+      </div>
+    </header>
 
-  <!-- header -->
-  <div class=" w-[80%] mx-auto h-[150px] flex justify-center items-center rounded-2xl text-violet-700 bg-gray-400">
-    <p class="">header</p>
-  </div>
+    <!-- main -->
+    <div
+      class="w-[80%] mx-auto h-[500px] flex justify-center items-center rounded-xl text-violet-700 bg-gray-200"
+    >
+      <p>main-tst</p>
+    </div>
 
-  <!-- main -->
-  <div class="w-[80%] mx-auto h-[500px] flex justify-center items-center rounded-xl text-violet-700 bg-gray-200">
-    <p>main-tst</p>
-  </div>
-
-  <!-- footer -->
-  <div class=" w-[80%] mx-auto h-[150px] flex justify-center items-center rounded-2xl text-violet-700 bg-gray-400">
-    <p class="">footer</p>
-  </div>
-</body>
+    <!-- footer -->
+    <div
+      class="w-[80%] mx-auto h-[150px] flex justify-center items-center rounded-2xl text-violet-700 bg-gray-400"
+    >
+      <p class="">footer</p>
+    </div>
+  </body>
 </html>
