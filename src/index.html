@@ -1,111 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="el" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- start header -->
-    <header class="mb-[2rem]">
-      <div
-        class="container max-w-[97%] mr-auto ml-auto pt-[1rem] pr-[0.5rem] pl-[0.5rem]"
-      >
-        <!-- start header top -->
-        <section class="header__top mt-[1rem]">
-          <div class="flex justify-between items-center">
-            <!-- start header top left -->
-            <section class="header__top--left flex items-center">
-              <div
-                class="px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
-              >
-                <div class="mr-[1rem]">
-                  <a
-                    class="px-[0.6rem] py-[0.3rem] rounded-[50%] text-white bg-blue-700"
-                    >5</a
-                  >
-                </div>
-                <div>
-                  <a class="px-[0.6rem] py-[0.2rem] rounded-[50%] "
-                    ><i class="fa fa-bars">5</i></a
-                  >
-                </div>
-              </div>
-              <!-- icon save -->
-              <div
-                class="m-[0.3rem] px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
-              >
-                <div class="">
-                  <a
-                    class="px-[0.6rem] py-[0.2rem] rounded-[50%] text-white bg-blue-700"
-                    >5</a
-                  >
-                </div>
-              </div>
-              <!-- icon save -->
-              <!-- icon login__sing up -->
-              <div
-                class="mr-[0.3rem] px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
-              >
-                <div class="mr-[0.1rem]">
-                  <a class="px-[0.6rem] py-[0.3rem] rounded-[50%]">ورود</a>
-                </div>
-                <div>
-                  <a class="px-[0.6rem] py-[0.3rem] rounded-[50%]">ثبت نام</a>
-                </div>
-              </div>
-              <!-- icon login__sing up -->
-            </section>
-            <!-- start header top right -->
-            <section class="header__top--right flex items-center">
-              <!-- start search -->
-              <div
-                class="header__top--search w-[30rem] px-[0.4rem] py-[0.6rem] bg-slate-200 flex items-center justify-between rounded-[5rem]"
-              >
-                <div class="">
-                  <a
-                    class="px-[0.8rem] py-[0.4rem] rounded-[50%] text-white bg-blue-700"
-                    >5</a
-                  >
-                </div>
-                <div style="direction: rtl;" class="text-left mr-[0.5rem]">
-                  <input
-                    class="outline-none border-none bg-transparent text-zinc-600"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="جستجوی محصولات ..."
-                  />
-                </div>
-              </div>
-              <!-- start logo -->
-              <div class="w-[11rem] ml-[1rem]">
-                <img src="/assets/logo.png" alt="logo site">
-              </div>
-            </section>
-          </div>
-        </section>
-        <!-- end header top -->
 
-        <!-- start header bottom-->
-        <section class="header__bottom"></section>
-        <!-- end header bottom -->
+<head>
+  <meta charset="el" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../dist/output.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class=" ">
+    <!-- top -->
+    <div class="flex justify-between items-center">
+      <!-- div-left -->
+      <div class="px-5 py-3 flex items-center gap-4">
+        <!-- profile -->
+        <button class=" w-[60px] h-[60px] lg:hidden">
+          <img class=" w-[100%] h-[100%]" src="../assets/user.png" alt="">
+        </button>
+        <!-- btn-basket -->
+        <button
+          class=" w-[50px] h-[50px] lg:flex lg:w-[100px] lg:justify-center lg:items-center  relative shadow-md shadow-gray-400 rounded-full ">
+          <span
+            class=" absolute -top-3 right-1 px-2 lg:static lg:w-[40px] lg:py-2 rounded-full overflow-hidden bg-sky-300 text-sky-700">5</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="p-0.5 translate-x-1.5 w-10 h-10 ">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+        </button>
+
+        <!-- btn-save -->
+        <button class="p-1.5 shadow-md rounded-full shadow-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+          </svg>
+
+        </button>
+
+        <!-- login/rigster -->
+        <div
+          class="hidden w-[150px] p-2 lg:flex lg:items-center lg:gap-4 lg:justify-center rounded-lg shadow-md shadow-gray-400">
+          <button class="w-max py-2">ورود</button>
+          <button class="w-max py-2 flex items-center gap-1">
+            ثبت نام
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+        </div>
+
       </div>
-    </header>
 
-    <!-- main -->
-    <div
-      class="w-[80%] mx-auto h-[500px] flex justify-center items-center rounded-xl text-violet-700 bg-gray-200"
-    >
-      <p>main-tst</p>
+      <!-- div-right -->
+      <div class=" flex items-center gap-1 ">
+        <!-- div-serch -->
+        <div class=" hidden p-1 lg:w-[500px] lg:h-[50px] relative lg:flex ">
+          <button class="p-1 absolute left-2 top-2 bg-sky-600 text-white rounded-full ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+          </button>
+          <input dir="rtl"
+            class="w-[100%] h-[100%] pl-10 pr-5 outline-none hidde bg-gray-100 rounded-2xl placeholder:text-[14px] "
+            placeholder=" جستوجوی محصولات..." type="text" name="" id="">
+        </div>
+        <!-- logo -->
+        <div class=" w-[200px] h-[60px]">
+          <a href="#">
+            <img class=" w-full h-full" src="/assets/logo.png" alt="logo site">
+          </a>
+        </div>
+        <!-- btn-menu-right -->
+        <button class=" w-[40px] h-[40px] lg:hidden shadow-md shadow-gray-400 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="p-1.5 w-full h-full">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+          </svg>
+        </button>
+      </div>
     </div>
+    <!-- bottom -->
+    <div class="">
+      <!-- code -->
+    </div>
+  </header>
 
-    <!-- footer -->
-    <div
-      class="w-[80%] mx-auto h-[150px] flex justify-center items-center rounded-2xl text-violet-700 bg-gray-400"
-    >
-      <p class="">footer</p>
-    </div>
-  </body>
+
+  <!-- main -->
+  <div class="w-[80%] mx-auto h-[500px] flex justify-center items-center rounded-xl text-violet-700 bg-gray-200">
+    <p>main-tst</p>
+  </div>
+
+  <!-- footer -->
+  <div class="w-[80%] mx-auto h-[150px] flex justify-center items-center rounded-2xl text-violet-700 bg-gray-400">
+    <p class="">footer</p>
+  </div>
+</body>
+
 </html>
