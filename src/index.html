@@ -6,101 +6,181 @@
     <link href="../dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
   <body>
-    <!-- start header -->
-    <header class="my-[2.5rem]">
-      <div
-        class="container max-w-[97%] mr-auto ml-auto pt-[1rem] pr-[0.5rem] pl-[0.5rem]"
-      >
-        <!-- start header top -->
-        <section class="header__top">
-          <div class="flex justify-between items-center">
-            <!-- start header top left -->
-            <section class="header__top--left flex items-center">
-              <div
-                class="px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
-              >
-                <div class="mr-[1rem]">
-                  <a
-                    class="px-[0.6rem] py-[0.3rem] rounded-[50%] text-white bg-blue-700"
-                    >5</a
-                  >
-                </div>
-                <div>
-                  <a class="px-[0.6rem] py-[0.2rem] rounded-[50%]"
-                    ><i class="fa fa-bars">♣</i></a
-                  >
-                </div>
-              </div>
-              <!-- icon save -->
-              <div
-                class="m-[0.3rem] px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
-              >
-                <div class="">
-                  <a class="px-[0.6rem] py-[0.2rem] rounded-[50%]">♣</a>
-                </div>
-              </div>
-              <!-- icon save -->
-              <!-- icon login__sing up -->
-              <div
-                class="mr-[0.3rem] px-[0.5rem] py-[0.5rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly"
-              >
-                <div class="mr-[0.1rem]">
-                  <a class="px-[0.6rem] py-[0.3rem] rounded-[50%]">ورود</a>
-                </div>
-                <div>
-                  <a class="px-[0.6rem] py-[0.3rem] rounded-[50%]">ثبت نام♣</a>
-                </div>
-              </div>
-              <!-- icon login__sing up -->
-            </section>
-            <!-- start header top right -->
-            <section class="header__top--right flex items-center">
-              <!-- start search -->
-              <div
-                class="header__top--search w-[30rem] px-[0.4rem] py-[0.6rem] bg-slate-200 flex items-center justify-between rounded-[5rem]"
-              >
-                <div class="">
-                  <a
-                    class="px-[0.8rem] py-[0.4rem] rounded-[50%] text-white bg-blue-700"
-                    >♣</a
-                  >
-                </div>
-                <div
-                  style="direction: rtl"
-                  class="text-left w-[25rem] mr-[0.5rem]"
-                >
-                  <input
-                    class="outline-none border-none bg-transparent w-[100%] text-zinc-600"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="جستجوی محصولات ..."
-                  />
-                </div>
-              </div>
-              <!-- start logo -->
-              <div class="w-[11rem] ml-[1rem]">
-                <img src="/assets/logo.png" alt="logo site" />
-              </div>
-            </section>
-          </div>
-        </section>
-        <!-- end header top -->
+    <!-- header -->
+    <header class=" ">
+      <!-- top -->
+      <div class="flex justify-between items-center">
+        <!-- div-left -->
+        <div class="px-5 pt-3 pb-6 flex items-center gap-4">
+          <!-- profile -->
+          <button class="w-[60px] h-[60px] lg:hidden">
+            <img class="w-[100%] h-[100%]" src="../assets/user.png" alt="" />
+          </button>
+          <!-- btn-basket -->
+          <button
+            class="w-[50px] h-[50px] lg:flex lg:w-[100px] lg:justify-center lg:items-center relative shadow-md shadow-gray-400 rounded-full"
+          >
+            <span
+              class="absolute -top-3 right-1 px-2 lg:static lg:w-[40px] lg:py-2 rounded-full overflow-hidden bg-blue-600 text-fuchsia-50 font-medium"
+              >5</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="p-0.5 translate-x-1.5 w-10 h-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+          </button>
 
-        <!-- start header bottom-->
-        <section
-          class="header__bottom mt-[0.4rem] flex justify-between items-center"
-        >
+          <!-- btn-save -->
+          <button
+            class="hidden lg:block p-1.5 shadow-md rounded-full shadow-gray-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+              />
+            </svg>
+          </button>
+
+          <!-- login/rigster -->
+          <div
+            class="hidden w-[150px] p-1 lg:flex lg:items-center lg:gap-4 lg:justify-center rounded-full shadow-md shadow-gray-400"
+          >
+            <button class="w-max py-2">ورود</button>
+            <button class="w-max py-2 flex items-center gap-1">
+              ثبت نام
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- div-right -->
+        <div class="px-3 flex items-center gap-1">
+          <!-- div-serch -->
+
+          <div
+            class="hidden p-1 lg:w-[400px] lg:h-[50px] xl:w-[550px] relative lg:flex"
+          >
+            <button
+              class="p-1 absolute left-2 top-2 bg-blue-600 text-white rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+            <input
+              dir="rtl"
+              class="w-[100%] h-[100%] pl-10 pr-5 outline-none hidde bg-gray-100 rounded-2xl placeholder:text-[14px]"
+              placeholder=" جستوجوی محصولات..."
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+          <!-- logo -->
+          <div class="w-[200px] h-[60px]">
+            <a href="#">
+              <img
+                class="w-full h-full"
+                src="/assets/logo.png"
+                alt="logo site"
+              />
+            </a>
+          </div>
+          <!-- btn-menu-right -->
+          <button
+            class="w-[40px] h-[40px] lg:hidden shadow-md shadow-gray-400 rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="p-1.5 w-full h-full"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <section class="hidden lg:block header__bottom items-center">
+        <div class="px-5 flex items-center justify-between gap-4">
           <!-- icons orangs and green -->
-          <div class="flex justify-between">
+          <div class="flex">
             <!-- icon orange -->
             <div
-              class="px-[0.4rem] py-[0.3rem] mr-[1rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly bg-orange-500"
+              class="cursor-pointer px-[0.6rem] py-[0.6rem] mr-[1rem] rounded-full shadow-[0px_0px_11px_-6px] flex justify-evenly bg-orange-400"
             >
               <div class="">
-                <a class="rounded-[50%] text-white text-sm"
-                  ><span><i>♣</i></span
+                <a class="rounded-[50%] flex text-white text-sm"
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                        clip-rule="evenodd"
+                      />
+                    </svg> </span
                   >09388495594</a
                 >
               </div>
@@ -108,59 +188,244 @@
 
             <!-- icon green -->
             <div
-              class="px-[0.4rem] py-[0.3rem] rounded-[5rem] shadow-[0px_0px_11px_-6px] flex justify-evenly bg-green-500"
+              class="cursor-pointer px-[0.6rem] py-[0.6rem] rounded-full flex justify-evenly bg-green-700"
             >
-            <div class="">
-              <a class="rounded-[50%] text-white text-sm"
-                ><span><i>♣</i></span
-                >09388495594</a
-              >
+              <div class="">
+                <a class="rounded-[50%] flex text-white text-sm"
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
+                      />
+                    </svg> </span
+                  >09388495594</a
+                >
+              </div>
             </div>
           </div>
 
-          </div>
-        
           <!-- list  -->
           <div>
             <ul class="flex items-center text-[13px]">
-              <li class="py-[0.3rem] rounded-[5rem]"><a>
-                در سانیار بفروشید </a></li>
-              <li class="ml-[0.8rem] py-[0.3rem] rounded-[5rem]"><a>
-                سوالی دارید
-              </a> </li>
-              <li class="ml-[0.8rem] py-[0.3rem] rounded-[5rem]"><a>
-                تخفیف ها و پیشنهاد ها <span class="text-[15px]"><i>♣</i></span
+              <!-- 1 -->
+              <li class="py-[0.3rem] rounded-full">در سانیار بفروشید</li>
+              <!-- 2 -->
+              <li class="ml-[0.8rem] py-[0.3rem] rounded-full">سوالی دارید</li>
+              <!-- 3 -->
+              <li class="ml-[0.8rem] flex py-[0.3rem] rounded-full">
+                تخفیف ها و پیشنهاد ها
+                <span class="ml-[0.3rem] text-[15px]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
                   >
-                </a></li>
-              <li class="ml-[0.8rem] py-[0.3rem] rounded-[5rem]"><a>
-                <span class="text-[15px]"><i>♣</i></span
-                  >  منو ساده
-                </a></li>
-              <li class="ml-[0.8rem] py-[0.3rem] rounded-[5rem]"><a>
-                <span class="text-[15px]"><i>♣</i></span
-                  > مگا لیست منو
-                </a></li>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 6h.008v.008H6V6z"
+                    />
+                  </svg>
+                </span>
+              </li>
+              <!--41 -->
+              <li class="ml-[0.8rem] flex py-[0.3rem] rounded-full">
+                <span class="mr-[0.3rem] text-[15px]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"
+                    />
+                  </svg>
+                </span>
+                منو ساده
+              </li>
+              <!-- 5 -->
+              <li class="ml-[0.8rem] flex py-[0.3rem] rounded-full">
+                <span class="text-[15px]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                    />
+                  </svg>
+                </span>
+                مگا لیست منو
+              </li>
+              <!-- 6 -->
               <li
-                class="ml-[0.8rem] text-white rounded-[5rem] bg-blue-600 px-[2rem] py-[0.3rem]"
-              ><a>
-                مگا تب منو  <span class="ml-[0.3rem] text-[15px]"><i>♣</i></span
+                class="ml-[0.8rem] flex text-white rounded-full bg-blue-600 px-[1.2rem] py-[0.5rem]"
+              >
+                مگا تب منو
+                <span class="ml-[0.3rem] text-[15px]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
                   >
-                </a></li>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </span>
+              </li>
             </ul>
           </div>
-
         </div>
-        </section>
-        <!-- end header bottom -->
-      </div>
+      </section>
     </header>
 
-    <!-- main -->
+    <!-- header-bottom-fixed -->
     <div
-      class="w-[80%] mx-auto h-[500px] flex justify-center items-center rounded-xl text-violet-700 bg-gray-200"
+      class="w-full h-[60px] fixed bottom-0 flex lg:hidden items-center justify-around bg-slate-100"
     >
-      <p>main-tst</p>
+      <button class="w-[50px] h-[50px] rounded-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-full h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+      </button>
+
+      <div class="w-2/3 flex justify-around items-center">
+        <!-- arshive -->
+        <button class="w-[50px] h-[50px] rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-full h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+            />
+          </svg>
+        </button>
+        <!-- basket -->
+        <button
+          class="p-1 w-[60px] h-[60px] rounded-full -translate-y-8 bg-blue-700 shadow-md shadow-slate-400 text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="p-1 w-full h-3/3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+            />
+          </svg>
+        </button>
+        <!-- home -->
+        <button class="w-[50px] h-[50px] rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-full h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- up -->
+      <button class="w-[50px] h-[50px] rounded-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 15.75l7.5-7.5 7.5 7.5"
+          />
+        </svg>
+      </button>
     </div>
+
+    <!-- main -->
+    <main>
+      <div class="px-5 pt-6 pb-6">
+        <div class="flex items-center gap-1 w-[100%] h-[28rem]">
+          <!-- slider -->
+          <div class="w-[100%] h-[100%] no-repeat bg-cover bg-center">
+            <img
+              class="w-[100%] h-[100%] rounded-2xl"
+              src="../assets/slide3-1.jpg"
+              alt=""
+            />
+          </div>
+          <!-- product -->
+          <div class="w-[30rem] h-[100%] bg-red-400"></div>
+        </div>
+      </div>
+    </main>
 
     <!-- footer -->
     <div
